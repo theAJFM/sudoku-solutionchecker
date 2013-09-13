@@ -29,13 +29,13 @@ def solve():
         set3 += box[it][6:9]+box[it+1][6:9]+box[it+2][6:9]
         #You can do this in 1 line using or, only in this case I chose to give a comment that points which exact set is wrong
         if(len(set(correct) - set(set1))>0):
-            print("The list " + str(set1) + "(sub-square checking) doesn't have all the numbers of 1 - 9")
+            print("The list " + str(set1) + "(sub-grid checking) doesn't have all the numbers of 1 - 9")
             valid = False;
         if(len(set(correct) - set(set2))>0):
-            print("The list " + str(set2) + "(sub-square checking) doesn't have all the numbers of 1 - 9")
+            print("The list " + str(set2) + "(sub-grid checking) doesn't have all the numbers of 1 - 9")
             valid = False;
         if(len(set(correct) - set(set3))>0):
-            print("The list " + str(set3) + "(sub-square checking) doesn't have all the numbers of 1 - 9")
+            print("The list " + str(set3) + "(sub-grid checking) doesn't have all the numbers of 1 - 9")
             valid = False;
 
     if(valid == True):
